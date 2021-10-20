@@ -7,9 +7,7 @@ function Navbar() {
       <span className="brand-logo">Web Warrior</span>
       <ul className="links">
         <li>
-          <Link exact to="/">
-            Home
-          </Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
