@@ -7,7 +7,7 @@ import * as styles from "../styles/project-details.module.css"
 
 export default function ProjectDetails({ data }) {
   const { html } = data.markdownRemark
-  const { title, stack, slug, featured } = data.markdownRemark.frontmatter
+  const { title, stack, featured } = data.markdownRemark.frontmatter
 
   return (
     <Layout>
@@ -15,7 +15,7 @@ export default function ProjectDetails({ data }) {
         <h1>{title}</h1>
         <h3>{stack}</h3>
         <div className={styles.featured}>
-          <GatsbyImage image={getImage(featured)} />
+          <GatsbyImage image={getImage(featured)} alt="" />
         </div>
         <div
           className={styles.html}

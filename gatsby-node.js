@@ -12,7 +12,7 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  console.log(data)
+
   data.allMarkdownRemark.nodes.forEach(node =>
     actions.createPage({
       path: "/projects/" + node.frontmatter.slug,
